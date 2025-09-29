@@ -1,6 +1,6 @@
 package DSA1.Array.SlidingWindow;
 
-//Problem Description
+//Problem Description //
 //
 //Given an array A of N non-negative numbers and a non-negative number B,
 //you need to find the number of subarrays in A with a sum less than B.
