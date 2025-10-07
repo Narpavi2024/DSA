@@ -1,4 +1,4 @@
-package TwoDArray;
+package DSA1.Array.TwoDArray;
 
 //Problem Description
 //
@@ -79,8 +79,6 @@ package TwoDArray;
 //        9 goes to 7, 7 goes to 1
 //        8 goes to 4, 4 goes to 2
 
-
-import java.awt.geom.RoundRectangle2D;
 
 public class RotateMatrix {
 

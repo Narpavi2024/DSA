@@ -1,4 +1,4 @@
-package TwoDArray;
+package DSA1.Array.TwoDArray;
 
 //
 //Problem Description
