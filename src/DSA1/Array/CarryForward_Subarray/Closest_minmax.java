@@ -59,13 +59,13 @@ package DSA1.Array.CarryForward_Subarray;
 public class Closest_minmax {
     public static void main(String[] args) {
         int[] A = {1, 3, 2};
+       // int[] A = {2, 6, 1, 6, 9};
         
         System.out.println(closestminmax(A));
     }
 
     private static int closestminmax(int[] A){
         int n = A.length;
-
         int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
 
@@ -75,26 +75,25 @@ public class Closest_minmax {
         }
 
         if(min == max) return 1;
-
         int lastmin = -1;
         int lastmax = -1;
-        int smallsubarr = n;
-
+        int smallestsubarrlen = n;
         for(int i=0;i<n;i++){
-            if(A[i] == min) {
-                lastmin = i;
 
-                if(lastmin != -1){
-                    smallsubarr = Math.min(smallsubarr,i-lastmax+1);
+            if(A[i] == min){
+                lastmin = i;
+                if(lastmax != -1){
+                    smallestsubarrlen = Math.min(smallestsubarrlen,i-lastmax+1);
                 }
 
-            } else if (A[i] == max) {
-                 lastmax = i;
-                 if(lastmax != -1){
-                     smallsubarr = Math.min(smallsubarr,i-lastmin+1);
-                 }
+            }else if(A[i] == max){
+                lastmax = i;
+                if(lastmin != -1){
+                    smallestsubarrlen = Math.min(smallestsubarrlen,i-lastmin+1);
+                }
+
             }
         }
-    return smallsubarr;
+        return smallestsubarrlen;
     }
 }
