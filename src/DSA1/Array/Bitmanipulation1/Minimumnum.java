@@ -1,4 +1,4 @@
-package Bitmanipulation1;
+package DSA1.Array.Bitmanipulation1;
 
 //Problem Description
 //

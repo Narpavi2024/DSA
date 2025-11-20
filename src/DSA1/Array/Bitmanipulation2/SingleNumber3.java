@@ -1,4 +1,4 @@
-package Bitmanipulation2;
+package DSA1.Array.Bitmanipulation2;
 //Problem Description
 //
 //Given an array of positive integers A, two integers appear only once, and all the other integers appear twice.

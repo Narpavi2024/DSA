@@ -1,4 +1,4 @@
-package Bitmanipulation1;
+package DSA1.Array.Bitmanipulation1;
 //Problem Description
 //
 //Given an array of integers A, every element appears twice except for one. Find that integer that occurs once.
@@ -56,7 +56,6 @@ package Bitmanipulation1;
 //
 //        1 occurs once.
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 

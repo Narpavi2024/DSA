@@ -1,12 +1,11 @@
-package Bitmanipulation1;
+package DSA1.Array.Bitmanipulation1;
 
 //Problem Description
 //
 //You are given two integers A and B.
-//Return 1 if B-th bit in A is set
-//Return 0 if B-th bit in A is unset
-//Note:
-//The bit position is 0-indexed, which means that the least significant bit (LSB) has index 0.
+//If B-th bit in A is set, make it unset
+//If B-th bit in A is unset, make it set
+//Return the updated A value
 //
 //
 //Problem Constraints
@@ -39,7 +38,7 @@ package Bitmanipulation1;
 //Example Output
 //
 //Output 1:
-//        0
+//        6
 //Output 2:
 //        1
 //
@@ -48,27 +47,24 @@ package Bitmanipulation1;
 //
 //For Input 1:
 //Given N = 4 which is 100 in binary. The 1-st bit is unset
-//so we return 0
+//so we make it set
 //For Input 2:
+//
 //Given N = 5 which is 101 in binary. The 2-nd bit is set
-//so we return 1
+//so we make it unset
 
-public class CheckBit {
 
+public class ToggleBit {
     public static void main(String[] args) {
-       int A = 5;
-       int B = 2;
-        System.out.println(checkbit(A,B));
+       int A = 4;
+        int B = 1;
+        System.out.println(toggle(A,B));
     }
 
-    private static int checkbit(int A, int B) {
+    private static int toggle(int A, int B) {
         int N = 0;
         N = (1<<B);
-        if((A&N) != 0){
-            return 1;
-        }else{
-            return 0;
-        }
-    }
 
+        return A ^ N;
+    }
 }
